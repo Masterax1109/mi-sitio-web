@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portal Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .ad-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Portal</h1>
+        <button id="logoutBtn">Cerrar Sesión</button>
+    </header>
+    
+    <div class="stats-container">
+        <h2>Estadísticas</h2>
+        <p>Total de clics: <span id="contador-clics">0</span></p>
+        <p>Ingresos generados: $<span id="contador-dinero">0</span> USD</p>
+    </div>
+
+    <!-- Título de Anuncios centrado -->
+    <h2 class="ad-title">Anuncios</h2>
+
+    <!-- Contenedor de anuncios -->
+    <div class="ad-container">
+        <!-- Anuncio 1 -->
+        <div class="anuncio" data-ad-id="1">
+            <img src="ad1.jpg" alt="Anuncio 1">
+        </div>
+        <!-- Anuncio 2 -->
+        <div class="anuncio" data-ad-id="2">
+            <img src="ad2.jpg" alt="Anuncio 2">
+        </div>
+        <!-- Anuncio 3 -->
+        <div class="anuncio" data-ad-id="3">
+            <img src="ad3.jpg" alt="Anuncio 3">
+        </div>
+        <!-- Anuncio 4 -->
+        <div class="anuncio" data-ad-id="4">
+            <img src="ad4.jpg" alt="Anuncio 4">
+        </div>
+    </div>
+    
+    <script src="conteo-clics.js"></script>
+</body>
+</html>
